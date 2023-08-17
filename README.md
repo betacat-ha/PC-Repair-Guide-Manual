@@ -17,8 +17,8 @@
         - [方式一：救援系统](#方式一救援系统)
         - [方式二：BIOS云端恢复](#方式二bios云端恢复)
       - [acer（宏碁）](#acer宏碁)
-    - [通过Windows 恢复环境 (Windows RE)重置](#通过windows-恢复环境-windows-re重置)
     - [使用PE环境重装](#使用pe环境重装)
+    - [通过Windows 恢复环境 (Windows RE)重置](#通过windows-恢复环境-windows-re重置)
   - [Windows更新相关](#windows更新相关)
     - [无损降级系统](#无损降级系统)
     - [指定Windows更新策略](#指定windows更新策略)
@@ -176,12 +176,17 @@ https://www.asus.com.cn/support/FAQ/1041621/#A4
 
 
 
-### <span id="WinRE">通过Windows 恢复环境 (Windows RE)重置</span>
-
-
-### 使用PE环境重装
+### <span id="PE">使用PE环境重装</span>
 
 如果系统已经损坏，可以使用该方法重置
+
+
+
+### <span id="WinRE">通过Windows 恢复环境 (Windows RE)重置</span>
+
+> 在系统遇到启动失败的情况下，Windows RE可能无法解决问题，建议优先考虑[PE环境](#PE)重装。
+
+
 
 
 
