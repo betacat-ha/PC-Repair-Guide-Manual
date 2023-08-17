@@ -1,25 +1,31 @@
 # PC服务队维修指南
 
-* [PC服务队维修指南](#pc服务队维修指南)
-  * [常用操作](#常用操作)
-    * [显示系统级隐藏文件](#显示系统级隐藏文件)
-    * [扫描系统文件的错误](#扫描系统文件的错误)
-  * [疑难杂症](#疑难杂症)
-    * [桌面图标变黑](#桌面图标变黑)
-  * [重装系统](#重装系统)
-    * [通过官方救援系统重置](#通过官方救援系统重置)
-      * [联想](#联想)
-        * [方式一](#方式一)
-        * [方式二](#方式二)
-      * [华为/荣耀](#华为荣耀)
-      * [DELL（戴尔）](#dell戴尔)
-      * [华硕](#华硕)
-        * [方式一：救援系统](#方式一救援系统)
-        * [方式二：BIOS云端恢复](#方式二bios云端恢复)
-      * [acer（宏碁）](#acer宏碁)
-    * [通过Windows 恢复环境 (Windows RE)重置](#通过windows-恢复环境-windows-re重置)
-    * [使用PE环境重置](#使用pe环境重置)
-
+- [PC服务队维修指南](#pc服务队维修指南)
+  - [常用操作](#常用操作)
+    - [显示系统级隐藏文件](#显示系统级隐藏文件)
+    - [扫描系统文件的错误](#扫描系统文件的错误)
+  - [疑难杂症](#疑难杂症)
+    - [桌面图标变黑](#桌面图标变黑)
+  - [重装系统](#重装系统)
+    - [通过官方救援系统重置](#通过官方救援系统重置)
+      - [联想](#联想)
+        - [方式一](#方式一)
+        - [方式二](#方式二)
+      - [华为/荣耀](#华为荣耀)
+      - [DELL（戴尔）](#dell戴尔)
+      - [华硕](#华硕)
+        - [方式一：救援系统](#方式一救援系统)
+        - [方式二：BIOS云端恢复](#方式二bios云端恢复)
+      - [acer（宏碁）](#acer宏碁)
+    - [通过Windows 恢复环境 (Windows RE)重置](#通过windows-恢复环境-windows-re重置)
+    - [使用PE环境重装](#使用pe环境重装)
+  - [Windows更新相关](#windows更新相关)
+    - [无损降级系统](#无损降级系统)
+    - [指定Windows更新策略](#指定windows更新策略)
+  - [附录](#附录)
+    - [长期支持版本(LTSC)](#长期支持版本ltsc)
+      - [Windows 11](#windows-11)
+      - [Windows 10](#windows-10)
 
 
 ## 常用操作
@@ -173,7 +179,66 @@ https://www.asus.com.cn/support/FAQ/1041621/#A4
 ### <span id="WinRE">通过Windows 恢复环境 (Windows RE)重置</span>
 
 
-### 使用PE环境重置
+### 使用PE环境重装
 
 如果系统已经损坏，可以使用该方法重置
 
+
+
+## Windows更新相关
+
+### 无损降级系统
+
+如果你想降级 Windows 至指定的版本，如长期支持版本(LTSC)，并一直使用它，则可以参考以下文章。
+
+> **准备工作**
+>
+> 1. 下载MCT工具：[链接](https://github.com/AveYo/MediaCreationTool.bat)
+> 2. [指定Windows更新策略](#specify-the-version)
+
+1. 解压下载好的MCT工具，在解压目录找到并运行 MediaCreationTool.bat 文件
+   <img src="./assets/media-creation-tool-1.png" alt="media-creation-tool-1" style="zoom:33%;" />
+2. 在弹出的选项中选择你需要的版本，如果你不确定需要哪个版本，可以参考附录的表格[长期支持版本(LTSC)](#LTSC)。![media-creation-tool-2](./assets/media-creation-tool-2.png)
+
+3. 在弹出的选项中选择`select`。
+   <img src="./assets/media-creation-tool-3.png" alt="media-creation-tool-3" style="zoom:50%;" />
+4. 根据软件提示继续完成后续的操作。
+
+
+
+
+
+###  <span id="specify-the-version">指定Windows更新策略</span>
+
+如果你不希望接收Windows的功能更新，但希望接收安全更新，则可以参考以下文章。
+
+1. 使用`Windows徽标键`+`R`快捷键调出“运行”，并在输入框中输入`gpedit.msc`，回车运行。
+2. 在弹出的“本地组策略管理器”窗口中，依次在左侧边栏中选择`管理模板`->`Windows组件`->`Windows更新`->`适用于企业的Windows更新`。
+3. 双击`选择目标功能更新版本`。
+4. 在弹出的“选择目标功能更新版本”窗口中，单击`已启用`单选框，并在“选项”下方输入你所需要的版本，单击`确定`。
+
+![specify-the-version-1](./assets/specify-the-version-1.png)
+
+
+
+## 附录
+
+###  <span id="LTSC">长期支持版本(LTSC)</span>
+
+#### Windows 11
+
+> 截止至2023.8.17，Windows 11 暂无长期支持版本(LTSC)
+
+
+
+#### Windows 10
+
+
+> | 版本       | 服务选项                          | 可用性日期 | 内部版本 | 主要支持结束日期 | 外延支持结束日期 |
+> | :--------- | :-------------------------------- | :--------- | :------- | :--------------- | :--------------- |
+> | 21H2       | 长期服务渠道 (LTSC)               | 2021-11-16 | 19044    | 2027-01-12       | 2032-01-13       |
+> | 1809       | 长期服务渠道 (LTSC)               | 2018-11-13 | 17763    | 2024-01-09       | 2029-01-09       |
+> | 1607       | Long-Term Servicing Branch (LTSB) | 2016-08-02 | 14393    | 服务结束         | 2026-10-13       |
+> | 1507 (RTM) | Long-Term Servicing Branch (LTSB) | 2015-07-29 | 10240    | 服务结束         | 2025-10-14       |
+>
+> *表格数据截止至2023.8.17，来自 [Microsoft](https://learn.microsoft.com/zh-cn/windows/release-health/supported-versions-windows-client) 。
