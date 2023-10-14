@@ -19,6 +19,9 @@
       - [acer（宏碁）](#acer宏碁)
     - [使用PE环境重装](#使用pe环境重装)
     - [通过Windows 恢复环境 (Windows RE)重置](#通过windows-恢复环境-windows-re重置)
+    - [激活Windows ](#激活windows-)
+      - [通过校园网激活Windows](#通过校园网激活windows)
+      - [通过工具激活Windows](#通过工具激活windows)
   - [Windows更新相关](#windows更新相关)
     - [无损降级系统](#无损降级系统)
     - [指定Windows更新策略](#指定windows更新策略)
@@ -77,6 +80,10 @@ sfc /scannow
 
 
 ## 重装系统
+
+> ⚠️使用重装系统时，请务必协助报修人备份数据。
+>
+> 如果对自己的技术没有自信，请随身携带一个大容量的U盘或移动硬盘，将数据备份到自己的U盘或移动硬盘上。在任务完成时，请当面删除备份数据，避免引起不必要的麻烦。
 
 ### 通过官方救援系统重置
 
@@ -179,6 +186,8 @@ https://www.asus.com.cn/support/FAQ/1041621/#A4
 
 ### <span id="PE">使用PE环境重装</span>
 
+> ⚠️经测试，Ventory不支持学校的苹果Mac电脑，请使用“微PE工具箱”维护Mac。
+
 如果系统已经损坏，可以使用该方法重置
 
 推荐使用"[微PE工具箱](https://www.wepe.com.cn)（[说明书](https://www.wepe.com.cn/ubook/)）"、"[优启通](https://www.upe.net/)"
@@ -192,6 +201,24 @@ https://www.asus.com.cn/support/FAQ/1041621/#A4
 ### <span id="WinRE">通过Windows 恢复环境 (Windows RE)重置</span>
 
 > 在系统遇到启动失败的情况下，Windows RE可能无法解决问题，建议优先考虑[PE环境](#PE)重装。
+
+
+
+### <span id="active-windows">激活Windows </span>
+
+> ⚠️大部分品牌台式机和笔记本均购买了正版Windows，无需手动激活。在重新安装期间，如果系统要求输入产品密钥，可以通过选择“ **我没有产品密钥** ”来跳过此步骤。 安装完成后，Windows 10/11 将自动联机激活。
+
+
+
+#### 通过校园网激活Windows
+
+学校为学生提供正版软件，在校园网内，前往[广东技术师范大学正版管理与服务平台](http://ms.gpnu.edu.cn/soft/detail/12)下载激活工具，运行“激活客户端”完成激活
+
+
+
+#### 通过工具激活Windows
+
+GitHub项目地址：[HEU_KMS_Activator](https://github.com/zbezj/HEU_KMS_Activator/releases)
 
 
 
