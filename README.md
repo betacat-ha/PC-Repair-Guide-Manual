@@ -107,9 +107,13 @@ sfc /scannow
 
 ## 重装系统
 
-> ⚠️使用重装系统时，请务必协助报修人备份数据。
->
-> 如果不确定自己的操作是否会丢失数据，请随身携带一个大容量的U盘或移动硬盘，将数据备份到自己的U盘或移动硬盘上。在任务完成时，请当面删除备份数据，避免引起不必要的麻烦。
+### 开始之前......
+
+1. 数据无价，请务必协助报修人**备份数据**。
+2. 如果不确定自己的操作是否会丢失数据，请随身携带一个大容量的U盘或移动硬盘，**将数据备份到自己的U盘或移动硬盘上**。在任务完成时，请当面删除备份数据，避免引起不必要的麻烦。
+3. 戴尔（含外星人）、华为、小米品牌的笔记本及台式机，因其驱动的特殊性，**请尽可能使用官方救援系统重置**。
+
+
 
 ### 通过官方救援系统重置
 
@@ -155,16 +159,19 @@ sfc /scannow
 
 
 
-#### DELL（戴尔）
+#### DELL（戴尔）/ Alienware（外星人）
 
-适用机型：硬盘含有隐藏救援分区的机型（通常在几G～十几G）
+适用机型：[机型列表](https://github.com/wjy2311077/PC-Repair-Guide-Manual/blob/72b11d1bd71fc3f6c7f0bc87cb4dcd4f52ca6de5/%E5%AE%98%E6%96%B9%E8%B5%84%E6%96%99/%E6%88%B4%E5%B0%94/Dell%20SupportAssist%20OS%20Recovery%20Support%20Matrix.pdf)，快速判断方法：硬盘含有隐藏救援分区的机型（通常在几G～十几G）
 
-进入方式：开机按 `F12` 访问一次性启动菜单。适用键盘方向键选择 **SupportAssist OS Recovery**，然后按 `Enter` 键。 
+进入方式：开机按 `F12` 访问一次性启动菜单。使用键盘方向键选择 **SupportAssist OS Recovery**，然后按 `Enter` 键。 
 
-> 提醒：必须在系统 BIOS 中启用 **SupportAssist OS Recovery**。
+> ⚠️提醒：必须在系统 BIOS 中启用 **SupportAssist OS Recovery**。
 
+> SupportAssist OS Recovery手册：[点击查看](https://github.com/wjy2311077/PC-Repair-Guide-Manual/blob/72b11d1bd71fc3f6c7f0bc87cb4dcd4f52ca6de5/%E5%AE%98%E6%96%B9%E8%B5%84%E6%96%99/%E6%88%B4%E5%B0%94/Dell%20SupportAssist%20OS%20Recovery%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97.pdf)
+>
 > 提示：如果系统中没有**SupportAssist OS Recovery**，还可以使用官方恢复工具：https://www.dell.com/support/osrecovery
 >
+> 官方支持链接：[https://www.dell.com/support/kbdoc/zh-cn/000177401/使-用-dell-supportassist-os-recovery-还原-系统](https://www.dell.com/support/kbdoc/zh-cn/000177401/使-用-dell-supportassist-os-recovery-还原-系统)
 
 
 
