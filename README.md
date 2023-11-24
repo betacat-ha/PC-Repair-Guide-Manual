@@ -64,16 +64,25 @@ sfc /scannow
 
 ## 疑难症
 
-### 桌面图标变黑
+### 图标显示为黑块或白块
 
 可能原因：图标缓存错误
 
-解决方案：打开`C:\用户\当前用户名\Local\AppData`，将`IconCache.db`删除
+解决方案：
+
+1. [显示系统级隐藏文件](#show-hidden-files)
+2. 打开`C:\用户\<当前用户名>\AppData\Local`，将`IconCache.db`删除
+
+​	例如：用户名为“BetaCat”的路径如下：`C:\用户\BetaCat\AppData\Local`
+
+> 若系统语言为英文，示例中的路径为`C:\User\BetaCat\AppData\Local`
+
+3. 隐藏系统级隐藏文件
 
 <img src="./assets/IMG_7299.jpeg" alt="IMG_7299" style="zoom: 50%;" />
 
-> 如果无法找到AppData，请参阅[显示系统级隐藏文件](#show-hidden-files)
-> 
+
+
 > 如果仍无法修复，请参阅[扫描系统文件的错误](#use-checker-to-repair-system-files)
 
 
